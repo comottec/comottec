@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.15.3//EN
+N:Ferreira;Cristiano;;;
+FN:Cristiano Ferreira
+ORG:Comottec Tecnologia;
+EMAIL;type=INTERNET;type=WORK;type=pref:cristiano@comottec.com.br
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:11984900877
+item1.URL;type=pref:https://www.comottec.com.br
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
