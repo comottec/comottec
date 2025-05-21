@@ -1,3 +1,481 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>OutOfRangeInput</Code><Message>One of the request inputs is out of range.
-RequestId:ef9f5fe7-101e-0049-5e57-ca1941000000
-Time:2025-05-21T13:51:27.0779202Z</Message></Error>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Comottec Tecnologia</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+         html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+         .mySlides {display:none}
+         .w3-tag, .fa {cursor:pointer}
+         .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+         .border__bottom {
+            border-bottom: 1px solid #000000;
+            opacity: 0.2;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+         }
+      </style>            
+      <script src="index.js"></script>
+   </head>
+
+   <body style="margin-right: 5px; margin-left: 5px;">
+      <!-- Links (sit on top) -->
+      <div class="w3-top w3-white">
+         <div class="w3-row w3-large">
+            <div class="w3-col s2">
+               <div class="w3-right w3-margin-right">
+                  <img src="logo_final1.png" alt="Comottec" style="width: 90px; height: 90px;"/>
+               </div>
+            </div>   
+            <div class="w3-col s10">
+               <div class="w3-row w3-large w3-center" style="margin-top: 40px;">
+                  <div class="w3-col s3">
+                     <a href="#services" class="w3-button w3-block">Serviços</a>
+                  </div>
+                  <div class="w3-col s3 w3-cell-middle">
+                     <a href="#digital" class="w3-button w3-block">Transformação Digital</a>
+                  </div>
+                  <div class="w3-col s3 w3-cell-middle">
+                     <a href="#iot" class="w3-button w3-block">Automação Industrial & IoT</a>
+                  </div>
+                  <div class="w3-col s3 w3-cell-middle">
+                     <a href="#contact" class="w3-button w3-block">Contato</a>
+                  </div>
+               </div>         
+            </div>
+         </div>
+         <div class="w3-row border__bottom"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+         <!-- Slideshow -->
+         <div class="w3-container">
+            <div class="w3-display-container mySlides">
+               <img src="/assets/1a.png" style="width: 100%;">
+               <div class="w3-display-bottomright w3-container w3-padding-32">
+                  <span class="w3-white w3-padding-large w3-animate-bottom">Integrações</span>
+               </div>
+            </div>
+            <div class="w3-display-container mySlides">
+               <img src="/assets/2a.png" style="width: 100%;">
+               <div class="w3-display-bottomleft w3-container w3-padding-32">
+                  <span class="w3-black w3-padding-large w3-animate-bottom">Desenvolvimento de Software</span>
+               </div>
+            </div>
+            <div class="w3-display-container mySlides">
+               <img src="/assets/3a.png" style="width: 100%;">
+               <div class="w3-display-bottomright w3-container w3-padding-32">
+               <span class="w3-black w3-padding-large w3-animate-top">Processos sem limites</span>
+               </div>
+            </div>
+
+            <!-- Slideshow next/previous buttons -->
+            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+               <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+               <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+            
+               <div class="w3-center">
+               <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+               <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+               <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+               </div>
+            </div>
+         </div>
+      
+         <!-- Grid -->
+         <div id="services" style="margin-bottom: 30px;"></div>
+
+         <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+               <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Serviços & expertise da Comottec</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+               <h3>ERP Protheus</h3>
+               <p>Consultoria e desenvolvimento de customizações avançadas.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+               <h3>Integrações Plataformas</h3>
+               <p>Microsoft 365, Google Apps, Mercado Livre entre outros.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+               <h3>APPs</h3>
+               <p>Desenvolvimento de Apps cross plataforma (iOS & Android).</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+               <h3>Comex</h3>
+               <p>Experiência de mais de 20 anos em implantação de software de Importação & Exportação.</p>
+               <p>Mais de 500 projetos de Easy Export & Easy Import entregues.</p>
+            </div>
+         </div>
+
+         <!-- Grid -->
+         <div id="digital" style="margin-bottom: 30px;"></div>
+
+         <div class="w3-row-padding">
+            <div class="w3-center w3-padding-64">
+               <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Transformação Digital</span>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/shopify.svg" alt="Shopify" style="width: 150px; margin-left: 15px;">
+                  <div class="w3-container">
+                     <h3><b>E-Commerce</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://www.shopify.com.br');">Shopify</a></p>
+                     <p>Implante o e-commerce Shopify integrado ao seu ERP Protheus 12.</p>
+                     <p>
+                        <button 
+                           class="w3-button w3-light-grey w3-block"
+                           onclick="document.getElementById('modal_Shopify').style.display='block'"
+                        >
+                           Saiba mais
+                        </button>
+                     </p>
+                  </div>
+
+                  <div id="modal_Shopify" class="w3-modal">
+                     <div class="w3-modal-content  w3-round-large">
+                       <div class="w3-container">
+                         <span onclick="document.getElementById('modal_Shopify').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                         <h2 class="w3-center w3-bottombar w3-border-blue">Comottec for Shopify</h1>
+                                                      
+                           <h5>Gostaria de implantar o e-commerce da Shopify integrado ao seu ERP Protheus 12?</p>
+                           
+                           <p>Temos uma ferramenta pronta para integrar clientes, pedidos e estoques com a plataforma Shopify.</p>
+                                                      
+                           <img 
+                              style="width: 100%;"
+                              src="assets/fluxo_shopify.png"
+                              alt="template Shopify"/>
+                                                      
+                           <p>Conforme seu cliente faz uma compra no Shopify, esse pedido
+                           começa a ser rastreado pela ferramenta, após a confirmação do pagamento, o template
+                           irá cadastrar o cliente no seu ERP (caso ainda não está cadastrado) e criar o
+                           Pedido deixando pronto para faturamento, ou ainda, nosso template pode ser configurado
+                           para faturar automaticamente o Pedido.</p>
+                           
+                           
+                           <button 
+                           class="w3-button w3-blue w3-block"
+                           onclick="document.getElementById('form_Shopify').style.display='block'; document.getElementById('modal_Shopify').style.display='none'"
+                           >Gostaria de conhecer a solução</button>
+                       </div>
+                     </div>
+                  </div>                  
+                  <div id="form_Shopify" class="w3-modal">
+                     <div class="w3-modal-content  w3-round-large">
+                        <div class="w3-container">
+                           <span onclick="document.getElementById('form_Shopify').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeurdWlKTtg01cQoHYd8QuWYOx6YH6nNTujLjRl-CV11pvxdA/viewform?embedded=true" width="100%" height="2134" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                        </div>
+                     </div>
+                  </div>   
+               </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/sharpspring.png" alt="Jane" style="width: 150px; margin-left: 15px">
+                  <div class="w3-container">
+                     <h3><b>Automação de Marketing</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://br.sharpspring.com/');">Sharp Spring</a></p>
+                     <p>Implante Sharp Spring integrado ao seu ERP Protheus 12.</p>
+                     <p><button  onclick="document.getElementById('modal_SS').style.display='block'"  class="w3-button w3-light-grey w3-block">Saiba mais</button></p>
+                  </div>
+               </div>
+               <div id="modal_SS" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('modal_SS').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <h2 class="w3-center w3-bottombar w3-border-blue">Comottec for SharpSpring</h1>
+                                                   
+                        <h5>Automação de Marketing e CRM da SharpSpring integrado ao seu ERP Protheus 12:</p>
+                        
+                        <p>Essa ferramenta irá para integrar clientes, contatos e inclusão de Oportunidades no SharpSpring, ou ainda, inlcusão/atualização de clientes ou contatos no seu ERP: </p>
+                                                   
+                        <img 
+                           style="width: 100%;"
+                           src="assets/fluxo_ss.png"
+                           alt="template Sharpspring"/>
+                                                   
+                        <p>Desenhe a jornada do seu cliente no SharpSpring, crie automações e e-mails automaticos, por trás seu ERP será atualizado ou poderá enviar mensagens para o SharpSpring, e dessa forma, criando sinergia entre as áreas de Marketing, Vendas e Operações.</p>                        
+                        
+                      <button 
+                        class="w3-button w3-blue w3-block"
+                        onclick="document.getElementById('modal_SS').style.display='none';document.getElementById('form_Sharp').style.display='block'"
+                      >Gostaria de conhecer a solução</button>
+                    </div>
+                  </div>
+               </div>   
+                
+                <div id="form_Sharp" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                     <div class="w3-container">
+                        <span onclick="document.getElementById('form_Sharp').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEY5C57hfcX-VMiYZ2-CHdjtfN9G_KuxvWThIyWQwYK6W6zQ/viewform?embedded=true" width="100%" height="1727" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                     </div>
+                  </div>
+               </div>   
+            </div>            
+
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/pipedrive.png" alt="Jane" style="width: 150px; margin-left: 15px; margin-top: 95px;">
+                  <div class="w3-container">
+                     <h3><b>CRM</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://www.pipedrive.com/pt/');">Pipedrive</a></p>
+                     <p>Implante Pipedrive integrado ao seu ERP Protheus 12.</p>
+                     <p><button  onclick="document.getElementById('modal_Pipedrive').style.display='block'"  class="w3-button w3-light-grey w3-block">Saiba mais</button></p>
+                  </div>
+               </div>
+
+               <div id="modal_Pipedrive" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('modal_Pipedrive').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <h2 class="w3-center w3-bottombar w3-border-blue">Comottec for Pipedrive</h1>
+                                                   
+                        <h5>CRM na nuvem do Pipedrive integrado ao seu ERP Protheus 12:</p>
+                        
+                        <p>Essa ferramenta irá para integrar clientes, contatos e inclusão de Oportunidades no Pipedrive, ou ainda, inlcusão/atualização de clientes ou contatos no seu ERP: </p>
+                                                   
+                        <img 
+                           style="width: 100%;"
+                           src="assets/fluxo_pipedrive.png"
+                           alt="template Pipedrive"/>
+                                                   
+                        <p>Use um dos software CRM lider de mercado como o Pipedrive, tenha a mão facilidades com o App da Pipedrive, e integre toda essa facilidade ao seu ERP Prothueus.</p>
+                        
+                      <button 
+                        class="w3-button w3-blue w3-block"
+                        onclick="document.getElementById('modal_Pipedrive').style.display='none';document.getElementById('form_Pipedrive').style.display='block'"
+                      >Gostaria de conhecer a solução</button>
+                    </div>
+                  </div>
+                </div>   
+                
+                <div id="form_Pipedrive" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                     <div class="w3-container">
+                        <span onclick="document.getElementById('form_Pipedrive').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7quGmqaXgbo7DlMR92ceiJv6BJIsO2jRHhf4nZCpmergCIw/viewform?embedded=true" width="100%" height="1727" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                     </div>
+                  </div>
+                </div>                   
+            </div>            
+
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/trello.png" alt="Trello" style="width: 120px; height: 120px; margin-left: 15px">
+                  <div class="w3-container">
+                     <h3><b>Processos e Metologias Agéis</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://www.trello.com');">Trello</a></p>
+                     <p>Implante Trello integrado ao seu ERP Protheus 12.</p>
+                     <p><button onclick="document.getElementById('modal_Trello').style.display='block'" class="w3-button w3-light-grey w3-block">Saiba mais</button></p>
+                  </div>
+               </div>
+
+               <div id="modal_Trello" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('modal_Trello').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <h2 class="w3-center w3-bottombar w3-border-blue">Comottec for Trello</h1>
+                                                   
+                        <h5>Organize os processos da sua empresa com o Trello integrado ao ERP Protheus 12:</p>
+                        
+                        <p>Temos a expertise em ligar as pontas ERP e Trello, seu processo de negócio totalmente digital e automatizado: </p>
+                                                   
+                        <img 
+                           style="width: 100%;"
+                           src="assets/fluxo_trello.png"
+                           alt="template Trello"/>
+                                                   
+                        <p>Use a amada plataforma de cards, Trello, use o App ou o aplicativo Web, ganhando produtividade com a integração da Comottec</p>
+                           
+                      <button 
+                        class="w3-button w3-blue w3-block"
+                        onclick="document.getElementById('modal_Trello').style.display='none';document.getElementById('form_Trello').style.display='block'"
+                      >Gostaria de conhecer a solução</button>
+                    </div>
+                  </div>
+                </div>                  
+
+                <div id="form_Trello" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                     <div class="w3-container">
+                        <span onclick="document.getElementById('form_Trello').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9AMKk8IOVaO7BsXMFajhctM1m3zKI_1XvjltLDWEkMF2pnA/viewform?embedded=true" width="100%" height="1727" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                     </div>
+                  </div>
+                </div>                   
+
+            </div>            
+
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/m365.png" alt="Trello" style="width: 200px; margin-left: 15px; margin-top: 45px;">
+                  <div class="w3-container">
+                     <h3><b>Plataforma Microsoft</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://www.microsoft365.com');">Microsoft 365</a></p>
+                     <p>Implante Microsoft 365 com tarefas, calerandarios, processos e demais recursos integrado ao seu ERP Protheus 12.</p>
+                     <p>
+                        <button 
+                           class="w3-button  w3-light-grey w3-block"
+                           onclick="document.getElementById('form_Microsoft').style.display='block'"
+                         >Saiba mais</button>
+                     </p>
+                  </div>
+               </div>
+
+               <div id="form_Microsoft" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                     <div class="w3-container">
+                        <span onclick="document.getElementById('form_Microsoft').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScurcPjfmNomaIDIDxuBm72t_F9Xaks150xXEA8DkhdnQWicg/viewform?embedded=true" width="100%" height="1727" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>               
+                     </div>
+                  </div>
+                </div>                   
+
+            </div>    
+            
+            <div class="w3-third w3-margin-bottom">
+               <div class="w3-card-4">
+                  <img src="/assets/googleapps.png" alt="Trello" style="width: 150px; margin-left: 15px; margin-top: 35px;">
+                  <div class="w3-container">
+                     <h3><b>Plataforma Google</b></h3>
+                     <p class="w3-opacity"><a href="javascript:window.open('https://gsuite.google.com/intl/pt-BR/');">Google Apps</a></p>
+                     <p>Implante Google Apps integrado ao seu ERP Protheus 12.</p>
+                     <p>
+                        <button 
+                           class="w3-button  w3-light-grey  w3-block"
+                           onclick="document.getElementById('form_Google').style.display='block'"
+                         >Saiba mais</button>
+                     </p>
+                  </div>
+               </div>
+
+               <div id="form_Google" class="w3-modal">
+                  <div class="w3-modal-content  w3-round-large">
+                     <div class="w3-container">
+                        <span onclick="document.getElementById('form_Google').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvfEinayaE3MDcfj9UViWIg2h7bvTqbEjJ6ps3Gkohtp2GtQ/viewform?embedded=true" width="100%" height="1727" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>               
+                     </div>
+                  </div>
+                </div>                   
+            </div>                
+
+         </div>
+
+
+         <div id="iot" style="margin-bottom: 30px;"></div>
+
+         <div class="w3-row w3-container w3-center">
+            <div class="w3-center w3-padding-64">
+               <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Automação Industrial & IoTs</span>
+            </div>
+            <div class="w3-center">
+               <img class="w3-border" src="/assets/faautomacao.png" alt="FA Automação" style="width: 250px;">
+            </div>
+            <div id="iot" style="margin-bottom: 30px;"></div>
+            <div class="w3-center">
+               <h5>Em parceria com a F.A Automação desenvolvemos projetos com foco na indústria:</h5>
+               <ul class="w3-ul w3-card w3-center">
+                 <li>Soluções para transformação digital na indústria alimentícia brasileira (indústria 4.0)</li>
+                 <li>Melhoria da eficiência operacional e energéticas com ótimo custo x benefício</li>
+                 <li>Plataforma Inteligente</li>
+                 <li>Suporte técnico diferenciado</li>
+                 <li>Integração entre sistemas</li>                                                   
+               </ul>
+             </div>             
+            <p>
+               <a href="https://www.faautomacao.com">
+                  <button class="w3-button w3-light-grey">Saiba mais</button>
+               </a>
+            </p>
+         </div>
+
+         <!-- Contact -->
+         <div id="contact" style="margin-bottom: 30px;"></div>
+
+         <div class="w3-center w3-padding-64">
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contato</span>
+         </div>
+
+         <div class="w3-row w3-large w3-center">
+            <div class="w3-row w3-large w3-center">
+               <a href="mailto:comercial@comottec.com.br" style="color: black; margin: 5px;">
+                  <span class="fa fa-envelope"></span>
+                  <span>comercial@comottec.com.br</span>
+               </a>
+               <a href="tel:+5511984900877" style="color: black; margin: 5px;">
+                  <span class="fa fa-phone-square"></span>
+                  <span>+55 (11) 98490-0877</span>
+               </a>            
+            </div>
+   
+            <p>
+               <button 
+                  class="w3-button  w3-light-grey"
+                  onclick="document.getElementById('contato').style.display='block'"
+                >Enviar Mensagem</button>
+            </p>
+
+            <div id="contato" class="w3-container" style="display: none;">
+               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHj5iT8oLYZKp_KtZas5N7Lpc5GGgmh6pGlcKKmCXXf3WgRg/viewform?embedded=true" width="640" height="956" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+         </div>
+
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+         <a href="#" class="w3-button w3-gray w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Ir para topo</a>
+         <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/Comottec/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.twitter.com/Comottec/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/cristiano-comottec/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+         </div>
+      </footer>
+
+      <script>
+      // Slideshow
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+      showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+      }
+      </script>
+
+   </body>
+</html>
