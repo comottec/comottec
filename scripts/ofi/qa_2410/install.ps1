@@ -40,7 +40,7 @@ function create-Shortcut {
     $ShortcutFile = (join-path -Path $INSTALATION_DIR -ChildPath "Totvs2410.lnk")
     $Shortcut = $WshShell.CreateShortcut($ShortcutFile)
     $Shortcut.TargetPath = (join-path -Path $INSTALATION_DIR -ChildPath "web-agent.exe")
-    $Shortcut.Arguments = "launch `"$APPSERVER_ENDPOINT/webapp/?p=SIGAMDI`&e=homolog`&M=1`" --browser=`"$localBrowser`""
+    $Shortcut.Arguments = "launch `"$APPSERVER_ENDPOINT/webapp/?p=SIGAMDI`&e=homolog`&M=1`" --browser=`"$localBrowser`" "
     $IconLocation = "C:\Windows\System32\shell32.dll,44"
     $Shortcut.IconLocation = $IconLocation
     $Shortcut.Save()
