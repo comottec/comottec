@@ -3,7 +3,7 @@
 $APPSERVER_ENDPOINT = "https://200.208.140.78:5010"
 $INSTALATION_ROOT = "c:\Totvs_WebAgent"
 $INSTALATION_DIR = (join-path -Path $INSTALATION_ROOT -ChildPath "Totvs2410_Prd")
-$WEBAGENT_URL = "https://comottecstore.blob.core.windows.net/`$web/files/ofi/Totvs2410-Prd.zip"
+$WEBAGENT_URL = "https://comottecstore.blob.core.windows.net/`$web/files/ofi/Totvs2410_Prd.zip"
 $TEMP_DIR = [System.IO.Path]::GetTempPath()
 $TEMP_FILE = (Join-Path -Path $TEMP_DIR -ChildPath "Totvs2410.zip")
 
