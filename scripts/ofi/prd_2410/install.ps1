@@ -41,7 +41,7 @@ function create-Shortcut {
     $Shortcut = $WshShell.CreateShortcut($ShortcutFile)
     $Shortcut.TargetPath = (join-path -Path $INSTALATION_DIR -ChildPath "web-agent.exe")
     $Shortcut.Arguments = "launch `"$APPSERVER_ENDPOINT/webapp/?p=SIGAMDI`&e=producao`&M=1`" --browser=`"$localBrowser`" "
-    $IconLocation = "C:\Windows\System32\shell32.dll,44"
+    $IconLocation = "C:\Windows\System32\shell32.dll,164"
     $Shortcut.IconLocation = $IconLocation
     $Shortcut.Save()
     
