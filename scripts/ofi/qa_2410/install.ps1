@@ -1,6 +1,6 @@
 ## powershell.exe -executionpolicy bypass -file "install.ps1"
 
-$APPSERVER_ENDPOINT = "https://200.208.140.78:6010"
+$APPSERVER_ENDPOINT = "https://protheus.ofi.com:6010"
 $INSTALATION_ROOT = "c:\Totvs_WebAgent"
 $INSTALATION_DIR = (join-path -Path $INSTALATION_ROOT -ChildPath "Totvs2410")
 $WEBAGENT_URL = "https://comottecstore.blob.core.windows.net/`$web/files/ofi/Totvs2410.zip"
@@ -38,6 +38,11 @@ function create-Shortcut {
     $localBrowser = (get-browser)
     $WshShell = New-Object -ComObject WScript.Shell
     $ShortcutFile = (join-path -Path $INSTALATION_DIR -ChildPath "Totvs2410.lnk")
+
+    if (test-path $ShortcutFile) {
+        Remove-Item -Path $ShortcutFile -Force
+    }
+
     $Shortcut = $WshShell.CreateShortcut($ShortcutFile)
     $Shortcut.TargetPath = (join-path -Path $INSTALATION_DIR -ChildPath "web-agent.exe")
     $Shortcut.Arguments = "launch `"$APPSERVER_ENDPOINT/webapp/?p=SIGAMDI`&e=homolog`&M=1`" --browser=`"$localBrowser`" "
@@ -60,7 +65,7 @@ function instalation-program {
     # import-certTotvs
 }
 
-echo "Iniciando programa de instalaçào..."
+echo "Iniciando programa de instalação..."
 instalation-program
 echo "Instalação concluída."
 
