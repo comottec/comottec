@@ -1,8 +1,8 @@
 ## powershell.exe -executionpolicy bypass -file "install.ps1"
 
 $APPSERVER_ENDPOINT = "https://protheus.olamagri.com:6310"
-$INSTALATION_ROOT = "c:\Totvs_WebAgent"
-$INSTALATION_DIR = (join-path -Path $INSTALATION_ROOT -ChildPath "Totvs2510_OGA_QA")
+$INSTALATION_ROOT = "c:\Totvs_WebAgent_OGA"
+$INSTALATION_DIR = (join-path -Path $INSTALATION_ROOT -ChildPath "Totvs2510_qa")
 $WEBAGENT_URL = "https://comottecstore.blob.core.windows.net/`$web/files/oga/totvs2510_qa.zip"
 $TEMP_DIR = [System.IO.Path]::GetTempPath()
 $TEMP_FILE = (Join-Path -Path $TEMP_DIR -ChildPath "Totvs2510_qa.zip")
@@ -18,16 +18,19 @@ function get-SmartApp {
     echo "Baixando arquivos para instalação..."
 
     if (test-path $TEMP_FILE) {
+        echo "Removendo arquivo temporário existente..."
         Remove-Item -Path $TEMP_FILE  -Force
     }
 
     Invoke-WebRequest -OutFile $TEMP_FILE -Uri $WEBAGENT_URL
 
     if (-not (test-path $INSTALATION_ROOT)) {
+        echo "Criando diretório de instalação..."
         md $INSTALATION_ROOT
     }
 
     if (test-path $INSTALATION_DIR) {
+        echo "Removendo diretório de instalação existente..."
         Remove-Item -Path $INSTALATION_DIR -Recurse -Force
     }
     Expand-Archive -Path $TEMP_FILE -DestinationPath $INSTALATION_ROOT 
