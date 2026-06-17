@@ -15,7 +15,7 @@ function get-browser {
 }
 
 function get-SmartApp {
-    echo "Baixando arquivos para instalaï¿½ï¿½o..."
+    echo "Baixando arquivos para instalação..."
 
     if (test-path $TEMP_FILE) {
         Remove-Item -Path $TEMP_FILE  -Force
@@ -65,7 +65,7 @@ function instalation-program {
     # import-certTotvs
 }
 
-echo "Iniciando programa de instalaï¿½ï¿½o..."
+echo "Iniciando programa de instalação..."
 instalation-program
-echo "Instalaï¿½ï¿½o concluï¿½da."
+echo "Instalação concluída."
 
