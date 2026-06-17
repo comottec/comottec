@@ -1,6 +1,6 @@
 ## powershell.exe -executionpolicy bypass -file "install.ps1"
 
-$APPSERVER_ENDPOINT = "https://protheus.oga.com:6310"
+$APPSERVER_ENDPOINT = "https://protheus.olamagri.com:6310"
 $INSTALATION_ROOT = "c:\Totvs_WebAgent"
 $INSTALATION_DIR = (join-path -Path $INSTALATION_ROOT -ChildPath "Totvs2510_qa")
 $WEBAGENT_URL = "https://comottecstore.blob.core.windows.net/`$web/files/oga/totvs2510_qa.zip"
